@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | PNC-Demo</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Dist.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">PNC-Demo</div>
+      </div>
+      <div>
+        <br>
+        <h3>Notes from the developer</h3>
+        <p>This is a simple proof of concept for a web based Point and Click game. Once getting past the proof of concept
+        phase, we will polish the game (e.g. replace art, add puzzles, add additional clickable objects, and improve user experience). </p><br>
+        <p>Currently, gameplay is limited to a few simple screens and objectives. The goal is to access the laptop with a password. The password can be discovered by clicking around at objects within the room. In order to solve the puzzle,
+        the player must: </p><br>
+        <p>1) Look at the sticky note that gives the password hint as the "favorite pet".</p>
+        <p>2) Open the desk drawer to find the cat food.</p>
+        <p>3) Use the cat food on the cat to calm the cat enough to allow you to read the cats name on its' collar.</p>
+        <p>Once the player has done that, they can click on the laptop and finish the puzzle.</p>
+        
+    </div>
+    </div>
+  </body>
+</html>
